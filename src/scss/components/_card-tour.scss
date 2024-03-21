@@ -1,0 +1,129 @@
+.tour-catalog-section {
+  &__block {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+
+    @include max768 {
+      grid-template-columns: repeat(1, 1fr);
+    }
+
+    margin-bottom: 24px;
+  }
+}
+
+.card-tour {
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+
+  &__content {
+    position: absolute;
+    z-index: 3;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+
+    @include max768 {
+      padding: 16px;
+    }
+
+    &--p20{
+      padding: 20px;
+
+      @include max991 {
+        padding: 12px;
+      }
+    }
+  }
+
+  &__block {
+    margin-top: auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__name {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.6;
+    text-align: right;
+    color: var(--white);
+    @include max768 {
+      font-size: 16px;
+    }
+  }
+
+  &__description {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 1.6;
+    text-align: right;
+    color: var(--white);
+    @include max768 {
+      font-size: 24px;
+    }
+  }
+
+  &__sum {
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 1.6;
+    text-align: right;
+    color: var(--white);
+    @include max768 {
+      font-size: 28px;
+    }
+  }
+
+  &__date {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.6;
+    text-align: right;
+    color: var(--white);
+    @include max768 {
+      font-size: 16px;
+    }
+  }
+}
+
+.block-reviews {
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+  margin-top: 20px;
+
+  .services-block{
+    margin-right: auto;
+  }
+}
+.services-block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &__item {
+    &:not(:first-child) {
+      margin-right: 15px;
+      @include max991 {
+        margin-right: 10px;
+      }
+    }
+  }
+
+  &__icon {
+    width: 24px;
+    height: 24px;
+    fill: var(--white);
+
+    @include max991 {
+      width: 20px;
+      height: 20px;
+    }
+  }
+}
+

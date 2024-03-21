@@ -1,0 +1,83 @@
+////
+/// Collection of simple SCSS mixins that are useful for adapting site for RTL languages
+///
+/// @author Alexander Grimalovsky <alexander.grimalovsky@gmail.com>
+////
+
+/// Apply styles that are specific to LTR languages
+@mixin ltr() {
+  html[dir="ltr"] & {
+      @content;
+  }
+}
+
+/// Apply styles that are specific to RTL languages
+@mixin rtl() {
+  html[dir="rtl"] & {
+      @content;
+  }
+}
+
+/// Apply horizontal position styles that vary depending on current language direction
+///
+/// @param {String|Number|null} $left   - Value for "left" property for LTR direction
+/// @param {String|Number|null} $right  - Value for "right" property for LTR direction
+/// @param {Boolean} $auto [false]      - Apply "auto" value for property with no explicitly defined value
+@mixin hpos($left: null, $right: null, $auto: false) {
+  @if ($left != null and $right == null and $auto) {
+      $right: auto;
+  } @else if ($left == null and $right != null and $auto) {
+      $left: auto;
+  }
+  @include ltr() {
+      @if ($left != null) {
+          left: $left;
+      }
+      @if ($right != null) {
+          right: $right;
+      }
+  }
+  @include rtl() {
+      @if ($left != null) {
+          right: $left;
+      }
+      @if ($right != null) {
+          left: $right;
+      }
+  }
+}
+
+/// Set direction-specific value for "text-align" CSS style
+///
+/// @param {String} $align [left]   - Alignment value for LTR direction
+@mixin text-align($align: left) {
+  @include ltr() {
+      text-align: $align;
+  }
+  @if ($align == left) {
+      $align: right;
+  } @else if ($align == right) {
+      $align: left;
+  }
+  @include rtl() {
+      text-align: $align;
+  }
+}
+
+
+
+// Подключение файла с миксинами
+
+// Пример использования миксина для установки текстового выравнивания
+.my-element {
+  @include text-align(right); // Применится текстовое выравнивание справа для LTR и слева для RTL
+}
+
+// Пример использования миксина для горизонтального позиционирования
+.another-element {
+  @include hpos(10px, null, true); // Применится левое позиционирование на 10px для LTR, а для RTL автоматически будет выставлено правое позиционирование
+}
+
+.f{
+  direction: rtl;
+}

@@ -1,0 +1,49 @@
+.hero {
+  max-height: 472px;
+  min-height: 200px;
+  position: relative;
+  padding-top: 33%;
+
+  @include max768 {
+    padding-top: 53%;
+  }
+
+  &__wrapper{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+  }
+
+  &__images {
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+    min-height: 200px;
+    height: 100%;
+  }
+
+  &__title{
+    max-width: 843px;
+    color: var(--white);
+  }
+
+  &__wrapper {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 10;
+
+    &--flex-center{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}
+
+
+

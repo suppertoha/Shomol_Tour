@@ -1,0 +1,281 @@
+h1,
+.h1 {
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 1.6;
+  text-transform: uppercase;
+  color: var(--black-text);
+
+  &--text-center {
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  @include max1024 {
+    font-size: 42px;
+  }
+
+  @include max600 {
+    font-size: 28px;
+  }
+}
+
+h2,
+.h2 {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 1.6;
+  text-transform: uppercase;
+  color: var(--black-text);
+  margin-top: 0;
+  transition: 0.3s;
+  margin-bottom: 40px;
+
+  &--text-link{
+    text-align: center;
+    color: var(--blue-interactive);
+    line-height: 1.2;
+
+    &--mb{
+      margin-bottom: 48px;
+
+      @include max768 {
+        margin-bottom: 20px;
+      }
+    }
+    a{
+      border-bottom: 1px dashed;
+    }
+  }
+
+  @include max768 {
+    font-size: 32px;
+  }
+}
+
+h3,
+.h3 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.6;
+  text-transform: uppercase;
+  color: var(--black-text);
+  margin-top: 0;
+}
+
+h4,
+.h4 {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 1.6;
+  text-transform: uppercase;
+  color: var(--black-text);
+  margin-top: 0;
+}
+
+p,
+.text-basic {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.6;
+  text-transform: uppercase;
+  color: #000;
+  color: var(--black-text);
+  margin-top: 0;
+}
+
+.btn {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 8px 16px;
+  height: 48px;
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.6;
+  text-align: center;
+  color: var(--white);
+
+  &--blue {
+    background: var(--iran-discovery-blue);
+  }
+
+  &--blue-fon {
+    position: relative;
+    &:before {
+      content: "";
+      display: inline-block;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      background: url(../img/BTN-Blue.svg) 50% no-repeat;
+      background-size: cover;
+      z-index: 1;
+    }
+
+    span {
+      position: relative;
+      z-index: 2;
+    }
+  }
+
+  &--light-blue {
+    background: var(--blue-interactive);
+  }
+
+  &--border {
+    background: var(--white);
+    border: 1px solid var(--iran-discovery-blue);
+  }
+
+  &--orange {
+    background: var(--iran-discovery-orange);
+  }
+
+  &--orange-push {
+    background: var(--orange-push);
+  }
+
+  &--big {
+    height: 100px;
+  }
+}
+
+.link-img {
+  display: flex;
+  align-items: center;
+
+  &__text {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.1;
+    color: #333;
+
+    &--border{
+      border-bottom: 1px dashed #333;
+    }
+
+    @media screen and (max-width: 1100px) {
+      font-size: 18px;
+    }
+
+    &--big {
+      font-weight: 500;
+      font-size: 42px;
+      letter-spacing: 0.04em;
+      color: #333;
+
+      @media screen and (max-width: 1100px) {
+        font-size: 26px;
+      }
+    }
+
+    &--light-blue {
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 1.6;
+      color: var(--blue-interactive);
+    }
+  }
+
+  &__icon {
+    margin-right: 10px;
+    width: 24px;
+    height: 24px;
+
+    &--big {
+      width: 34px;
+      height: 34px;
+
+      @media screen and (max-width: 1100px) {
+        width: 24px;
+        height: 24px;
+      }
+    }
+  }
+}
+
+.logo {
+  width: 122px;
+  height: 72px;
+  flex-shrink: 0;
+  align-self: center;
+
+  @media screen and (max-width: 1100px) {
+    width: 82px;
+    height: 48px;
+  }
+}
+
+.scrollbar-main{
+
+}
+
+.bg-img {
+  display: flex;
+  align-items: flex-start;
+  position: relative;
+  height: inherit;
+
+  &--border{
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  &:before {
+    content: "";
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    left: 0px;
+    top: 0px;
+    background: rgb(194, 194, 194);
+    background: linear-gradient(
+      180deg,
+      rgba(194, 194, 194, 1) 0%,
+      rgba(156, 155, 155, 1) 50%,
+      rgba(75, 75, 75, 1) 100%
+    );
+  }
+
+  img{
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+  }
+
+  &--position-abs{
+    max-height: 472px;
+    height: 100%;
+    img{
+      position: absolute;
+    }
+  }
+}
+
+
+.direction-rtl{
+  direction: rtl;
+}
+
+.section-margin{
+  &--mb-big{
+    margin-bottom: 80px;
+
+    @include max768 {
+      margin-bottom: 60px;
+    }
+  }
+}

@@ -1,0 +1,32 @@
+// если вы хотите использовать sass-переменные - удалите root
+// colors
+:root {
+  // base
+  --font-family: "Rubik", sans-serif;
+  --second-family: "Montserrat", sans-serif;
+  --font3: "Roboto", sans-serif;
+  --content-width: 1400px;
+  --container-offset: 15px;
+  --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
+
+  // colors
+
+  --iran-discovery-orange: #ff6a00;
+	--iran-discovery-blue: #004495;
+	--white: #fff;
+	--orange-push: #c85300;
+	--blue-interactive: #0587d6;
+	--grey: #c2c2c2;
+	--light-blue-30: #cee5ff;
+	--iran-discovery-style: #017ac3;
+	--blue-darker: #0066a4;
+	--linear: #017ac3;
+	--black-text: #242440;
+	--grey-second-text: #666;
+	--text: #444;
+	--blue-extra-light: #e7f2ff;
+	--blue-new: #0486d3;
+	--grey-stroke: #c2c2c2;
+}
+
+

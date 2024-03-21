@@ -1,0 +1,28 @@
+
+.star-rating {
+  font-size: 0;
+}
+
+.star {
+  display: inline-block;
+  &:not(:first-child){
+  margin-right: 9px;
+  }
+  width: 23px;
+  height: 23px;
+  background: url(../img/off.svg) no-repeat center center;
+  background-size: cover;
+  cursor: pointer;
+
+  @include max991 {
+    width: 18px;
+    height: 18px;
+    &:not(:first-child){
+      margin-right: 4px;
+    }
+  }
+}
+
+.star.active {
+  background-image: url(../img/on.svg);
+}

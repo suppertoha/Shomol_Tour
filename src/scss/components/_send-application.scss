@@ -1,0 +1,37 @@
+.send-apllication {
+  background: #eff7ff;
+  border: 1px solid var(--light-blue-30);
+  border-radius: 10px;
+  &__items {
+    padding: 0 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__content {
+    flex: 1 1 640px;
+
+    p {
+      font-weight: 400;
+      font-size: 32px;
+      line-height: 1.6;
+      text-align: right;
+      color: var(--black-text);
+    }
+  }
+
+  &__title {
+    color: var(--blue-interactive);
+  }
+
+  &__image {
+  }
+
+  &__item {
+    flex: 0 1 455px;
+  }
+
+  &__form {
+  }
+}

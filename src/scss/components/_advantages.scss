@@ -1,0 +1,68 @@
+.advantages {
+  padding: 64px 0;
+  &__inner {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 30px 20px;
+
+    &--big{
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 40px 180px;
+
+      @include max768 {
+        gap: 40px 60px;
+      }
+
+      @include max400 {
+        flex-direction: column;
+      }
+    }
+  }
+
+  @include max768 {
+    padding: 40px 0;
+  }
+}
+
+.advantages-block {
+  &__link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__image {
+    display: block;
+    margin-bottom: 10px;
+
+    &--big{
+      width: 185px;
+      height: 185px;
+      object-fit: contain;
+    }
+    @include max768 {
+      width: 87px;
+      height: 87px;
+      &--big{
+        width: 112px;
+        height: 112px;
+      }
+    }
+  }
+
+  &__descr {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.2;
+    text-align: center;
+    color: var(--blue-interactive);
+
+    @include max768 {
+      font-size: 20px;
+    }
+  }
+}
+
+

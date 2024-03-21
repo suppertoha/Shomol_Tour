@@ -1,0 +1,41 @@
+<section class="send-apllication section direction-rtl section--margin-bottom">
+  <ul class="send-apllication__items list-reset">
+
+    <li class="send-apllication__item">
+      <form class="send-apllication__form">
+        <label class="form-field form-field--gray contacts-form__field">
+          <span class="form-field__caption">اسم شما <span class="form-field__star">*</span></span>
+          <input type="text" name="name" placeholder="یوسف اجیروف" class="form-field__input">
+        </label>
+
+        <label class="form-field form-field--gray contacts-form__field">
+          <span class="form-field__caption">اسم شما <span class="form-field__star">*</span></span>
+          <input class="inputPhone form-field__input"  type="tel" placeholder="+98" inputmode="tel" name="ST_REGISTER_AUTH_PHONE" autocomplete="off" required="">
+        </label>
+
+        <label class="form-field form-field--gray contacts-form__field">
+          <span class="form-field__caption">درخواست<span class="form-field__star">*</span></span>
+          <textarea name="message" placeholder="ترجیحات و خواسته های شما" class="form-field__input form-field__input--big"></textarea>
+        </label>
+        <label class="custom-checkbox contacts-form__checkbox">
+          <input type="checkbox" class="custom-checkbox__input">
+          <span class="custom-checkbox__text">I agree to receive communications from Createx Construction Bureau.</span>
+        </label>
+        <div class="centered">
+          <button class="contacts-form__btn btn-reset btn btn--fill" type="submit">Send Request</button>
+        </div>
+      </form>
+    </li>
+
+    <li class="send-apllication__content">
+      <h2 class="send-apllication__title">به ما درخواست بفرستید</h2>
+      <p >ما با شما تماس میگیریم</p>
+
+      <picture class="send-apllication__image">
+        <source srcset="img/send-application-mobile.webp" type="image/webp" media="(max-width: 600px)" width="415" height="360">
+        <source srcset="img/send-application.webp" type="image/webp" media="(max-width: 1024px)" width="511" height="392">
+        <img loading="lazy" src="img/send-application.png" class="image" width="511" height="392" alt="img">
+      </picture>
+    </li>
+  </ul>
+</section>
