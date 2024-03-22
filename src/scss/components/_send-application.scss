@@ -2,15 +2,71 @@
   background: #eff7ff;
   border: 1px solid var(--light-blue-30);
   border-radius: 10px;
+  overflow: hidden;
   &__items {
     padding: 0 80px;
     display: flex;
+    gap: 20px;
     justify-content: center;
     align-items: center;
+
+    position: relative;
+    &:before,
+    &::after {
+      content: "";
+      width: 100%;
+      height: 100%;
+      display: inline-block;
+      position: absolute;
+    }
+
+    &:before {
+      background: url(../img/send-application--fon1.svg) no-repeat;
+      background-size: contain;
+      left: 0px;
+      top: 0px;
+
+      @include max991 {
+        background-size: cover;
+      }
+
+      @include max768 {
+        width: calc(var(--index) * 46);
+        height: calc(var(--index) * 20);
+        top: auto;
+        bottom: 0;
+      }
+    }
+
+    &:after {
+      width: calc(var(--index) * 46);
+      height: calc(var(--index) * 20);
+      background: url(../img/send-application--map.png) no-repeat;
+      background-size: contain;
+      left: 0px;
+      bottom: 0px;
+
+      @include max768 {
+        width: calc(var(--index) * 62);
+        height: calc(var(--index) * 22);
+        top: auto;
+        bottom: 0px;
+      }
+    }
+
+    @include max991 {
+      padding: 0 20px;
+    }
+
+    @include max768 {
+      flex-direction: column-reverse;
+    }
   }
 
   &__content {
-    flex: 1 1 640px;
+    flex: 0 1 640px;
+    padding-right: 80px;
+    padding-top: 20px;
 
     p {
       font-weight: 400;
@@ -19,19 +75,61 @@
       text-align: right;
       color: var(--black-text);
     }
+
+    @include max991 {
+      padding-right: 20px;
+    }
+
+    @include max768 {
+      flex: 1 1 100%;
+      p{
+        font-size: 24px;
+      }
+    }
   }
 
   &__title {
     color: var(--blue-interactive);
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 1.4;
+    text-transform: uppercase;
+    text-align: right;
+    color: var(--blue-interactive);
+    margin-bottom: 16px;
+
+    @include max768 {
+      font-size: 32px;
+    }
   }
 
   &__image {
+    display: flex;
+    align-items: flex-start;
+    position: relative;
+    z-index: 2;
+    &--mobile{
+      display: none;
+    }
+
+    @include max768 {
+      &--pc{
+        display: none;
+      }
+
+      &--mobile{
+        display: flex;
+      }
+    }
   }
 
   &__item {
-    flex: 0 1 455px;
-  }
+    flex: 1 1 455px;
+    position: relative;
+    z-index: 2;
 
-  &__form {
+    @include max768 {
+      flex: 1 1 100%;
+    }
   }
 }

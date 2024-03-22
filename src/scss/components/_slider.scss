@@ -1,5 +1,5 @@
-.slider-fade{
-  img{
+.slider-fade {
+  img {
     position: absolute;
     top: 0;
     left: 0;
@@ -30,7 +30,7 @@
   @media screen and (min-width: 1024px) {
     &:hover {
       background: var(--iran-discovery-orange);
-      svg{
+      svg {
         fill: var(--white);
       }
     }
@@ -40,7 +40,6 @@
 .slider-container {
   position: relative;
   @include max400 {
-
   }
 
   .swiper-button-next {
@@ -64,27 +63,39 @@
     @include max400 {
       display: none;
     }
+
+    &--top-mobile{
+      display: block;
+    }
+  }
+
+  &__element--border {
+    border: 1px solid var(--light-blue-30);
+    border-radius: 10px;
   }
 }
 
-.swiper-pagination{
+.swiper-pagination {
   display: none;
   @include max400 {
     display: block;
   }
 }
 
-.swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction{
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
   bottom: -25px;
 }
 
 .swiper-pagination-bullet {
   width: 10px;
   height: 10px;
-  background:  var(--grey);
+  background: var(--grey);
   opacity: 1;
 }
 
-.swiper-pagination-bullet.swiper-pagination-bullet-active{
+.swiper-pagination-bullet.swiper-pagination-bullet-active {
   background: var(--black-text);
 }

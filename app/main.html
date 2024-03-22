@@ -246,7 +246,7 @@
   </div>
 
   <div class="tour-catalog-section__slider direction-rtl">
-    <div class="slider-container">
+    <div class="slider-container slider-container--third">
       <div class="swiper slider">
         <div class="swiper-wrapper slider__wrapper">
           <div class="swiper-slide slider__slide anime-block-hover">
@@ -345,10 +345,10 @@
         <div class="tour-catalog-section section-margin section-margin--mb-big">
 
   <div class="tour-catalog-section__slider direction-rtl">
-    <div class="slider-container">
+    <div class="slider-container slider-container--third">
       <div class="swiper slider">
         <div class="swiper-wrapper slider__wrapper">
-          <div class="swiper-slide slider__slide anime-block-hover">
+          <div class="swiper-slide slider__slide">
             <a class="slider__element" href="img/card-hotel-slider.jpg" data-fslightbox="gallery">
               <picture class="bg-img bg-img--border">
                 <source srcset="img/card-tour-block-mob.webp" type="image/webp" media="(max-width: 600px)" width="320" height="232">
@@ -394,7 +394,7 @@
               </div>
             </a>
           </div>
-          <div class="swiper-slide slider__slide anime-block-hover">
+          <div class="swiper-slide slider__slide">
             <a class="slider__element" href="img/card-hotel-slider.jpg" data-fslightbox="gallery">
               <picture class="bg-img bg-img--border">
                 <source srcset="img/card-tour-block-mob.webp" type="image/webp" media="(max-width: 600px)" width="320" height="232">
@@ -438,7 +438,7 @@
               </div>
             </a>
           </div>
-          <div class="swiper-slide slider__slide anime-block-hover">
+          <div class="swiper-slide slider__slide">
             <a class="slider__element" href="img/card-hotel-slider.jpg" data-fslightbox="gallery">
               <picture class="bg-img bg-img--border">
                 <source srcset="img/card-tour-block-mob.webp" type="image/webp" media="(max-width: 600px)" width="320" height="232">
@@ -482,7 +482,50 @@
               </div>
             </a>
           </div>
+          <div class="swiper-slide slider__slide">
+            <a class="slider__element" href="img/card-hotel-slider.jpg" data-fslightbox="gallery">
+              <picture class="bg-img bg-img--border">
+                <source srcset="img/card-tour-block-mob.webp" type="image/webp" media="(max-width: 600px)" width="320" height="232">
+                <source srcset="img/card-hotel-slider.webp" type="image/webp">
+                <img loading="lazy"  src="img/card-hotel-slider.jpg" width="413" height="416" alt="tour-slider">
+              </picture>
+              <div class="card-tour__content card-tour__content--p20">
+                <div class="card-tour__block">
+                  <span class="card-tour__description">هتل سیتی</span>
+                  <span class="card-tour__sum">30.000.000 تومان</span>
 
+                  <div class="block-reviews">
+                    <ul class="services-block list-reset">
+                      <li class="services-block__item">
+                        <img loading="lazy" src="img/cook-tool.svg" width="24" height="24" class="services-block__icon" alt="cook-tool">
+                      </li>
+                      <li class="services-block__item">
+                        <img loading="lazy" src="img/tea-cup.svg" width="24" height="24" class="services-block__icon" alt="tea-cup">
+                      </li>
+                      <li class="services-block__item">
+                        <img loading="lazy" src="img/hotel-air-conditioner.svg" width="24" height="24" class="services-block__icon" alt="hotel-air-conditioner">
+                      </li>
+                      <li class="services-block__item">
+                        <img loading="lazy" src="img/wi-fi.svg" width="24" height="24" class="services-block__icon" alt="wi-fi">
+                      </li>
+                      <li class="services-block__item">
+                        <img loading="lazy" src="img/pool.svg" width="24" height="24" class="services-block__icon" alt="pool">
+                      </li>
+                    </ul>
+
+                    <div class="star-rating">
+                      <input type="hidden" class="rating-value" value="3">
+                      <span class="star active" data-value="1"></span>
+                      <span class="star active" data-value="2"></span>
+                      <span class="star active" data-value="3"></span>
+                      <span class="star" data-value="4"></span>
+                      <span class="star" data-value="5"></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
         </div>
       </div>
       <div class="swiper-pagination"></div>
@@ -531,49 +574,556 @@
       </section>
       <!-- End advantages-link -->
 
-      <section class="send-apllication section direction-rtl section--margin-bottom">
-  <ul class="send-apllication__items list-reset">
+      <section class=" container direction-rtl section section--margin-bottom">
+  <div class="send-apllication">
+    <ul class="send-apllication__items list-reset">
 
-    <li class="send-apllication__item">
-      <form class="send-apllication__form">
-        <label class="form-field form-field--gray contacts-form__field">
-          <span class="form-field__caption">اسم شما <span class="form-field__star">*</span></span>
-          <input type="text" name="name" placeholder="یوسف اجیروف" class="form-field__input">
-        </label>
+      <li class="send-apllication__item">
+        <form class="send-apllication__form">
+          <label class="form-field form-field--mb">
+            <span class="form-field__caption">اسم شما <span class="form-field__star">*</span></span>
+            <input type="text" name="name" placeholder="یوسف اجیروف" class="form-field__input">
+          </label>
 
-        <label class="form-field form-field--gray contacts-form__field">
-          <span class="form-field__caption">اسم شما <span class="form-field__star">*</span></span>
-          <input class="inputPhone form-field__input"  type="tel" placeholder="+98" inputmode="tel" name="ST_REGISTER_AUTH_PHONE" autocomplete="off" required="">
-        </label>
+          <label class="form-field form-field--mb">
+            <span class="form-field__caption">اسم شما <span class="form-field__star">*</span></span>
+            <input class="inputPhone form-field__input"  type="tel" placeholder="+98" inputmode="tel" name="ST_REGISTER_AUTH_PHONE" autocomplete="off" required="">
+          </label>
 
-        <label class="form-field form-field--gray contacts-form__field">
-          <span class="form-field__caption">درخواست<span class="form-field__star">*</span></span>
-          <textarea name="message" placeholder="ترجیحات و خواسته های شما" class="form-field__input form-field__input--big"></textarea>
-        </label>
-        <label class="custom-checkbox contacts-form__checkbox">
-          <input type="checkbox" class="custom-checkbox__input">
-          <span class="custom-checkbox__text">I agree to receive communications from Createx Construction Bureau.</span>
-        </label>
-        <div class="centered">
-          <button class="contacts-form__btn btn-reset btn btn--fill" type="submit">Send Request</button>
-        </div>
-      </form>
-    </li>
+          <label class="form-field form-field--mb">
+            <span class="form-field__caption">درخواست<span class="form-field__star">*</span></span>
+            <textarea name="message" placeholder="ترجیحات و خواسته های شما" class="form-field__input form-field__input--big"></textarea>
+          </label>
+          <label class="custom-checkbox contacts-form__checkbox form-field--mb">
+            <input type="checkbox" checked class="custom-checkbox__input">
+            <span class="custom-checkbox__check"><svg class="custom-checkbox__icons">
+              <use xlink:href="img/sprite.svg#arrow-check"></use>
+            </svg></span>
+            <span class="custom-checkbox__text">من با پردازش داده های شخصی مطابق با شرایط سیاست حفظ حریم خصوصی موافقم</span>
+          </label>
+          <div class="centered">
+            <button class="contacts-form__btn btn btn--w100 btn--orange" type="submit">ارسال درخواست</button>
+          </div>
+        </form>
+        <picture class="send-apllication__image send-apllication__image--mobile">
+          <source srcset="img/send-application-mobile.webp" type="image/webp" width="415" height="360">
+          <img loading="lazy" src="img/send-application.png" class="image" width="415" height="360" alt="img">
+        </picture>
+      </li>
 
-    <li class="send-apllication__content">
-      <h2 class="send-apllication__title">به ما درخواست بفرستید</h2>
-      <p >ما با شما تماس میگیریم</p>
+      <li class="send-apllication__content">
+        <h2 class="send-apllication__title">به ما درخواست بفرستید</h2>
+        <p >ما با شما تماس میگیریم</p>
 
-      <picture class="send-apllication__image">
-        <source srcset="img/send-application-mobile.webp" type="image/webp" media="(max-width: 600px)" width="415" height="360">
-        <source srcset="img/send-application.webp" type="image/webp" media="(max-width: 1024px)" width="511" height="392">
-        <img loading="lazy" src="img/send-application.png" class="image" width="511" height="392" alt="img">
-      </picture>
-    </li>
-  </ul>
+        <picture class="send-apllication__image send-apllication__image--pc">
+          <source srcset="img/send-application.webp" type="image/webp" width="511" height="392">
+          <img loading="lazy" src="img/send-application.png" class="image" width="511" height="392" alt="img">
+        </picture>
+      </li>
+    </ul>
+  </div>
 </section>
 
+      <!-- Hotel catalog -->
+      <section class="container section section--margin-bottom">
+        <h2 class="h2 h2--text-link h2--text-link--mb"><a href="#">هتل های روسیه</a></h2>
+        <div class="tour-catalog-section section-margin section-margin--mb-big">
+
+          <div class="tour-catalog-section__slider direction-rtl">
+            <div class="slider-container slider-container--third">
+              <div class="swiper slider">
+                <div class="swiper-wrapper slider__wrapper">
+                  <div class="swiper-slide slider__slide">
+                    <a class="slider__element" href="img/card-hotel-slider.jpg" data-fslightbox="gallery">
+                      <picture class="bg-img bg-img--border">
+                        <source srcset="img/card-tour-block-mob.webp" type="image/webp" media="(max-width: 600px)" width="320" height="232">
+                        <source srcset="img/card-hotel-slider.webp" type="image/webp">
+                        <img loading="lazy"  src="img/card-hotel-slider.jpg" width="413" height="416" alt="tour-slider">
+                      </picture>
+                      <div class="card-tour__content card-tour__content--p20">
+                        <div class="card-tour__block">
+                          <span class="card-tour__description">کنسرت در مسکو </span>
+                          <span class="card-tour__sum">30.000.000 تومان</span>
+
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="swiper-slide slider__slide">
+                    <a class="slider__element" href="img/card-hotel-slider.jpg" data-fslightbox="gallery">
+                      <picture class="bg-img bg-img--border">
+                        <source srcset="img/card-tour-block-mob.webp" type="image/webp" media="(max-width: 600px)" width="320" height="232">
+                        <source srcset="img/card-hotel-slider.webp" type="image/webp">
+                        <img loading="lazy"  src="img/card-hotel-slider.jpg" width="413" height="416" alt="tour-slider">
+                      </picture>
+                      <div class="card-tour__content card-tour__content--p20">
+                        <div class="card-tour__block">
+                          <span class="card-tour__description">اسکی در مسکو </span>
+                          <span class="card-tour__sum">30.000.000 تومان</span>
+
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="swiper-slide slider__slide">
+                    <a class="slider__element" href="img/card-hotel-slider.jpg" data-fslightbox="gallery">
+                      <picture class="bg-img bg-img--border">
+                        <source srcset="img/card-tour-block-mob.webp" type="image/webp" media="(max-width: 600px)" width="320" height="232">
+                        <source srcset="img/card-hotel-slider.webp" type="image/webp">
+                        <img loading="lazy"  src="img/card-hotel-slider.jpg" width="413" height="416" alt="tour-slider">
+                      </picture>
+                      <div class="card-tour__content card-tour__content--p20">
+                        <div class="card-tour__block">
+                          <span class="card-tour__description">فوتو سشن آرمیتاژ </span>
+                          <span class="card-tour__sum">30.000.000 تومان</span>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="swiper-slide slider__slide">
+                    <a class="slider__element" href="img/card-hotel-slider.jpg" data-fslightbox="gallery">
+                      <picture class="bg-img bg-img--border">
+                        <source srcset="img/card-tour-block-mob.webp" type="image/webp" media="(max-width: 600px)" width="320" height="232">
+                        <source srcset="img/card-hotel-slider.webp" type="image/webp">
+                        <img loading="lazy"  src="img/card-hotel-slider.jpg" width="413" height="416" alt="tour-slider">
+                      </picture>
+                      <div class="card-tour__content card-tour__content--p20">
+                        <div class="card-tour__block">
+                          <span class="card-tour__description">فوتو سشن آرمیتاژ </span>
+                          <span class="card-tour__sum">30.000.000 تومان</span>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="swiper-slide slider__slide">
+                    <a class="slider__element" href="img/card-hotel-slider.jpg" data-fslightbox="gallery">
+                      <picture class="bg-img bg-img--border">
+                        <source srcset="img/card-tour-block-mob.webp" type="image/webp" media="(max-width: 600px)" width="320" height="232">
+                        <source srcset="img/card-hotel-slider.webp" type="image/webp">
+                        <img loading="lazy"  src="img/card-hotel-slider.jpg" width="413" height="416" alt="tour-slider">
+                      </picture>
+                      <div class="card-tour__content card-tour__content--p20">
+                        <div class="card-tour__block">
+                          <span class="card-tour__description">فوتو سشن آرمیتاژ </span>
+                          <span class="card-tour__sum">30.000.000 تومان</span>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+
+              <div class="slider__navigation">
+                <div class="swiper-button-prev slider-arrow"><svg><use xlink:href="img/sprite.svg#arrow-left"></use></svg></div>
+                <div class="swiper-button-next slider-arrow"><svg><use xlink:href="img/sprite.svg#arrow-right"></use></svg></div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+      <!-- End Hotel catalog -->
+
+      <section class="container section section--margin-bottom">
+        <h2 class="h2 h2--text-link h2--text-link--mb"><a href="#">مقالات ما</a></h2>
+        <div class="tour-catalog-section section-margin section-margin--mb-big">
+
+  <div class="tour-catalog-section__slider direction-rtl">
+    <div class="slider-container slider-container--third">
+      <div class="swiper slider">
+        <div class="swiper-wrapper slider__wrapper">
+          <div class="swiper-slide slider__slide">
+            <a class="slider__element slider__element--border" href="img/slider-article-img.jpg" data-fslightbox="gallery">
+              <picture class="bg-img">
+                <source srcset="img/slider-article-mob.webp" type="image/webp" media="(max-width: 600px)" width="248" height="232">
+                <source srcset="img/slider-article.webp" type="image/webp">
+                <img loading="lazy"  src="img/slider-article.jpg" width="413" height="297" alt="slider-article">
+              </picture>
+              <div class="card-tour__content card-tour__content--bottom">
+                <div class="card-tour__block">
+                  <span class="card-tour__description card-tour__description--blue">کنسرت در مسکو </span>
+                  <p>
+                    در اینجا خلاصه ای از متن مقاله آمده است. در اینجا خلاصه ای از متن مقاله آمده است. در اینجا خلاصه ای از متن مقاله آمده است. در اینجا خلاصه ای از متن مقاله آمده است
+                  </p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="swiper-slide slider__slide">
+            <a class="slider__element slider__element--border" href="img/slider-article-img.jpg" data-fslightbox="gallery">
+              <picture class="bg-img">
+                <source srcset="img/slider-article-mob.webp" type="image/webp" media="(max-width: 600px)" width="248" height="232">
+                <source srcset="img/slider-article.webp" type="image/webp">
+                <img loading="lazy"  src="img/slider-article.jpg" width="413" height="297" alt="slider-article">
+              </picture>
+              <div class="card-tour__content card-tour__content--bottom">
+                <div class="card-tour__block">
+                  <span class="card-tour__description card-tour__description--blue">کنسرت در مسکو </span>
+                  <p>
+                    در اینجا خلاصه ای از متن مقاله آمده است. در اینجا خلاصه ای از متن مقاله آمده است. در اینجا خلاصه ای از متن مقاله آمده است. در اینجا خلاصه ای از متن مقاله آمده است
+                  </p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="swiper-slide slider__slide">
+            <a class="slider__element slider__element--border" href="img/slider-article-img.jpg" data-fslightbox="gallery">
+              <picture class="bg-img">
+                <source srcset="img/slider-article-mob.webp" type="image/webp" media="(max-width: 600px)" width="248" height="232">
+                <source srcset="img/slider-article.webp" type="image/webp">
+                <img loading="lazy"  src="img/slider-article.jpg" width="413" height="297" alt="slider-article">
+              </picture>
+              <div class="card-tour__content card-tour__content--bottom">
+                <div class="card-tour__block">
+                  <span class="card-tour__description card-tour__description--blue">کنسرت در مسکو </span>
+                  <p>
+                    در اینجا خلاصه ای از متن مقاله آمده است. در اینجا خلاصه ای از متن مقاله آمده است. در اینجا خلاصه ای از متن مقاله آمده است. در اینجا خلاصه ای از متن مقاله آمده است
+                  </p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="swiper-slide slider__slide">
+            <a class="slider__element slider__element--border" href="img/slider-article-img.jpg" data-fslightbox="gallery">
+              <picture class="bg-img">
+                <source srcset="img/slider-article-mob.webp" type="image/webp" media="(max-width: 600px)" width="248" height="232">
+                <source srcset="img/slider-article.webp" type="image/webp">
+                <img loading="lazy"  src="img/slider-article.jpg" width="413" height="297" alt="slider-article">
+              </picture>
+              <div class="card-tour__content card-tour__content--bottom">
+                <div class="card-tour__block">
+                  <span class="card-tour__description card-tour__description--blue">کنسرت در مسکو </span>
+                  <p>
+                    در اینجا خلاصه ای از متن مقاله آمده است. در اینجا خلاصه ای از متن مقاله آمده است. در اینجا خلاصه ای از متن مقاله آمده است. در اینجا خلاصه ای از متن مقاله آمده است
+                  </p>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="slider__navigation slider__navigation--top-mobile">
+        <div class="swiper-button-prev slider-arrow"><svg><use xlink:href="img/sprite.svg#arrow-left"></use></svg></div>
+        <div class="swiper-button-next slider-arrow"><svg><use xlink:href="img/sprite.svg#arrow-right"></use></svg></div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+      </section>
+
+      <!-- partners -->
+      <section class="container section section--margin-bottom">
+        <h2 class="h2 h2--text-link h2--text-link--mb"><a href="#">مناطق روسیه</a></h2>
+        <div class="tour-catalog-section section-margin section-margin--mb-big">
+
+          <div class="tour-catalog-section__slider direction-rtl">
+            <div class="slider-container slider-container--four">
+              <div class="swiper slider">
+                <div class="swiper-wrapper slider__wrapper">
+                  <div class="swiper-slide slider__slide">
+                    <a class="slider__element" href="img/region-slider.jpg" data-fslightbox="gallery">
+                      <picture class="bg-img bg-img--border">
+                        <source srcset="img/region-slider-mob.webp" type="image/webp" media="(max-width: 600px)" width="320" height="232">
+                        <source srcset="img/region-slider.webp" type="image/webp">
+                        <img loading="lazy"  src="img/region-slider.jpg" width="413" height="416" alt="tour-slider">
+                      </picture>
+                      <div class="card-tour__content card-tour__content--p20">
+                        <div class="card-tour__block">
+                          <span class="card-tour__description">سفر به بایکال </span>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="swiper-slide slider__slide">
+                    <a class="slider__element" href="img/region-slider.jpg" data-fslightbox="gallery">
+                      <picture class="bg-img bg-img--border">
+                        <source srcset="img/region-slider-mob.webp" type="image/webp" media="(max-width: 600px)" width="320" height="232">
+                        <source srcset="img/region-slider.webp" type="image/webp">
+                        <img loading="lazy"  src="img/region-slider.jpg" width="413" height="416" alt="tour-slider">
+                      </picture>
+                      <div class="card-tour__content card-tour__content--p20">
+                        <div class="card-tour__block">
+                          <span class="card-tour__description">سفر به کازان</span>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="swiper-slide slider__slide">
+                    <a class="slider__element" href="img/region-slider.jpg" data-fslightbox="gallery">
+                      <picture class="bg-img bg-img--border">
+                        <source srcset="img/region-slider-mob.webp" type="image/webp" media="(max-width: 600px)" width="320" height="232">
+                        <source srcset="img/region-slider.webp" type="image/webp">
+                        <img loading="lazy"  src="img/region-slider.jpg" width="413" height="416" alt="tour-slider">
+                      </picture>
+                      <div class="card-tour__content card-tour__content--p20">
+                        <div class="card-tour__block">
+                          <span class="card-tour__description">سفر به سنت پترزبورگ</span>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="swiper-slide slider__slide">
+                    <a class="slider__element" href="img/region-slider.jpg" data-fslightbox="gallery">
+                      <picture class="bg-img bg-img--border">
+                        <source srcset="img/region-slider-mob.webp" type="image/webp" media="(max-width: 600px)" width="320" height="232">
+                        <source srcset="img/region-slider.webp" type="image/webp">
+                        <img loading="lazy"  src="img/region-slider.jpg" width="413" height="416" alt="tour-slider">
+                      </picture>
+                      <div class="card-tour__content card-tour__content--p20">
+                        <div class="card-tour__block">
+                          <span class="card-tour__description">سفر به سنت پترزبورگ</span>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="swiper-slide slider__slide">
+                    <a class="slider__element" href="img/region-slider.jpg" data-fslightbox="gallery">
+                      <picture class="bg-img bg-img--border">
+                        <source srcset="img/region-slider-mob.webp" type="image/webp" media="(max-width: 600px)" width="320" height="232">
+                        <source srcset="img/region-slider.webp" type="image/webp">
+                        <img loading="lazy"  src="img/region-slider.jpg" width="413" height="416" alt="tour-slider">
+                      </picture>
+                      <div class="card-tour__content card-tour__content--p20">
+                        <div class="card-tour__block">
+                          <span class="card-tour__description">سفر به سنت پترزبورگ</span>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-pagination swiper-pagination--four"></div>
+
+              <div class="slider__navigation">
+                <div class="swiper-button-prev slider-arrow"><svg><use xlink:href="img/sprite.svg#arrow-left"></use></svg></div>
+                <div class="swiper-button-next slider-arrow"><svg><use xlink:href="img/sprite.svg#arrow-right"></use></svg></div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <section class="container section--margin-bottom">
+        <div class="objects-wrap">
+          <div class="objects-wrap-items">
+              <div class="objects-wrap-items-show scroll-reverse">
+                <a class="partners-wrap__element" href="#">
+                  <img loading="lazy" src="img/partners-first.svg" width="305" height="110" class="image" alt="img">
+                </a>
+                <a class="partners-wrap__element" href="#">
+                  <img loading="lazy" src="img/partners-second.svg" width="305" height="110" class="image" alt="img">
+                </a>
+                <a class="partners-wrap__element" href="#">
+                  <img loading="lazy" src="img/partners-thierd.svg" width="305" height="110" class="image" alt="img">
+                </a>
+                <a class="partners-wrap__element" href="#">
+                  <img loading="lazy" src="img/partners-fourh.svg" width="305" height="110" class="image" alt="img">
+                </a>
+              </div>
+              <div aria-hidden="true" class="objects-wrap-items-show scroll-reverse">
+                <a class="partners-wrap__element" href="#">
+                  <img loading="lazy" src="img/partners-first.svg" width="305" height="110" class="image" alt="img">
+                </a>
+                <a class="partners-wrap__element" href="#">
+                  <img loading="lazy" src="img/partners-second.svg" width="305" height="110" class="image" alt="img">
+                </a>
+                <a class="partners-wrap__element" href="#">
+                  <img loading="lazy" src="img/partners-thierd.svg" width="305" height="110" class="image" alt="img">
+                </a>
+                <a class="partners-wrap__element" href="#">
+                  <img loading="lazy" src="img/partners-fourh.svg" width="305" height="110" class="image" alt="img">
+                </a>
+              </div>
+          </div>
+      </div>
+
+      </section>
+      <!-- End partners -->
     </main>
+    <footer class="footer">
+  <div class="footer-top container">
+    <div class="footer-top__container">
+      <div class="contacts-container contacts-container--row">
+        <a href="tel:+98211373" class="link-img">
+          <img loading="lazy" src="img/phone-big.svg" width="34" height="34" class="link-img__icon link-img__icon" alt="img">
+          <span class="link-img__text link-img__text--border link-img__text--col-big">+98 211373</span>
+        </a>
+        <a href="tel:+981343425970" class="link-img">
+          <img loading="lazy" src="img/phone.svg" width="24" height="24" class="link-img__icon" alt="img">
+          <span class="link-img__text link-img__text--border">+98 1343425970</span>
+        </a>
+        <a href="https://telegram.org/" class="link-img">
+          <img loading="lazy" src="img/telegram.svg" width="24" height="24" class="link-img__icon" alt="img">
+          <span class="link-img__text link-img__text--border">+98 1343425970</span>
+        </a>
+
+        <a href="mailto:footer-top__mail" class="link-img">
+          <img loading="lazy" src="img/mail.svg" width="24" height="24" class="link-img__icon" alt="img">
+          <span class="link-img__text link-img__text--light-blue link-img__text--col-mini">info@shomoltour.com</span>
+        </a>
+      </div>
+
+      <div class="footer__text">
+        دفتر تهران: خیابان دکتر فاطمی، هتل لاله، ِ غرفه ۱۱دفتر انزلی: خیابان رمضانی، کوچه کشاورز، ساختمان امیر کبیر، واحد ۱۱
+      </div>
+    </div>
+
+    <a href="main.html" class="footer-top__logo logo">
+      <img loading="lazy" src="img/Logo.svg" width="122" height="72" class="logo__img" alt="logo">
+    </a>
+  </div>
+
+  <div class="footer-center direction-rtl container">
+    <ul class="link-footer list-reset">
+      <li class="link-footer__row">
+        <ul class="link-footer__col list-reset">
+          <li class="link-footer__item">
+            خدمات تراسفر در روسیه
+          </li>
+          <li class="link-footer__item">
+            <a href="#" class="link-footer__link">خرید بلیط پرواز در روسیه</a>
+          </li>
+          <li class="link-footer__item">
+            <a href="#" class="link-footer__link">خرید بلیط قطار در روسیه </a>
+          </li>
+          <li class="link-footer__item">
+            <a href="#" class="link-footer__link">ترانسفر فرودگاهی در روسیه </a>
+          </li>
+        </ul>
+      </li>
+
+      <li class="link-footer__row">
+        <ul class="link-footer__col list-reset">
+          <li class="link-footer__item">
+            خدمات تراسفر در روسیه
+          </li>
+          <li class="link-footer__item">
+            <a href="#" class="link-footer__link">خرید بلیط پرواز در روسیه</a>
+          </li>
+          <li class="link-footer__item">
+            <a href="#" class="link-footer__link">خرید بلیط قطار در روسیه </a>
+          </li>
+          <li class="link-footer__item">
+            <a href="#" class="link-footer__link">ترانسفر فرودگاهی در روسیه </a>
+          </li>
+        </ul>
+      </li>
+
+      <li class="link-footer__row">
+        <ul class="link-footer__col list-reset">
+          <li class="link-footer__item">
+            خدمات تراسفر در روسیه
+          </li>
+          <li class="link-footer__item">
+            <a href="#" class="link-footer__link">خرید بلیط پرواز در روسیه</a>
+          </li>
+          <li class="link-footer__item">
+            <a href="#" class="link-footer__link">خرید بلیط قطار در روسیه </a>
+          </li>
+          <li class="link-footer__item">
+            <a href="#" class="link-footer__link">ترانسفر فرودگاهی در روسیه </a>
+          </li>
+        </ul>
+      </li>
+
+      <li class="link-footer__row">
+        <ul class="link-footer__col list-reset">
+          <li class="link-footer__item">
+            خدمات تراسفر در روسیه
+          </li>
+          <li class="link-footer__item">
+            <a href="#" class="link-footer__link">خرید بلیط پرواز در روسیه</a>
+          </li>
+          <li class="link-footer__item">
+            <a href="#" class="link-footer__link">خرید بلیط قطار در روسیه </a>
+          </li>
+          <li class="link-footer__item">
+            <a href="#" class="link-footer__link">ترانسفر فرودگاهی در روسیه </a>
+          </li>
+        </ul>
+      </li>
+
+      <li class="link-footer__row">
+        <ul class="link-footer__col list-reset">
+          <li class="link-footer__item">
+            خدمات تراسفر در روسیه
+          </li>
+          <li class="link-footer__item">
+            <a href="#" class="link-footer__link">خرید بلیط پرواز در روسیه</a>
+          </li>
+          <li class="link-footer__item">
+            <a href="#" class="link-footer__link">خرید بلیط قطار در روسیه </a>
+          </li>
+          <li class="link-footer__item">
+            <a href="#" class="link-footer__link">ترانسفر فرودگاهی در روسیه </a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+
+  <div class="footer-bottom direction-rtl">
+    © 1401 «شمال گشت مسیر ترقی» شماره مجوز شرکت: 11223344556676
+  </div>
+</footer>
+
+<section hidden class="popup questioner-form" data-popup="questions-modal">
+  <div class="popup__body">
+    <div class="popup__content questioner-form__content">
+      <a href="#" class="popup__close close-popup">✖</a>
+      <form action="#" class="form main-form">
+        <div class="title-h3">Задать вопрос</div>
+        <span class="main-form__subtite">Оставьте заявку, наш менеджер свяжется с Вами в ближайшее время</span>
+        <div class="input-map__address main-form main-form__row">
+          <div class="form-item main-form__field">
+            <input class="inputMain form-input" type="name" name="name" placeholder=" ">
+            <label class="form-label">Ваше имя</label>
+          </div>
+          <div class="form-item main-form__field">
+            <input class="inputMain" type="mail" name="mail" placeholder=" ">
+            <label class="form-label">Email <span class="main-form__label">*</span></label>
+            <small class="main-form__error"></small>
+          </div>
+          <div class="form-item main-form__field">
+            <input class="inputMain" id="my-input" type="tel" inputmode="tel" name="ST_REGISTER_AUTH_PHONE" autocomplete="off" placeholder=" ">
+            <label class="form-label">Телефон <span class="main-form__label">*</span></label>
+            <small class="main-form__error"></small>
+          </div>
+          <div class="main-select main-select--popup">
+            <select name="Пол" class="main-select__items  multi-default--big multi-default" aria-label="По какому мероприятию вопрос*">
+              <option value="">По какому мероприятию вопрос </option>
+              <option value="Мероприятие 1">Мероприятие 1</option>
+              <option value="Мероприятие 2">Мероприятие 2</option>
+              <option value="Мероприятие 3">Мероприятие 3</option>
+              <option value="Мероприятие 4">Мероприятие 4</option>
+              <option value="Мероприятие 5">Мероприятие 5</option>
+              <option value="Мероприятие 6">Мероприятие 6</option>
+              <option value="Мероприятие 3">Мероприятие 3</option>
+              <option value="Мероприятие 4">Мероприятие 4</option>
+              <option value="Мероприятие 5">Мероприятие 5</option>
+              <option value="Мероприятие 6">Мероприятие 6</option>
+            </select>
+          </div>
+          <div class="form-item main-form__field">
+            <textarea class="inputMain form-label__comment" type="comment" name="comment" placeholder=" "></textarea>
+            <label class="form-label">Вопрос <span class="main-form__label">*</span></label>
+            <small class="main-form__error"></small>
+          </div>
+
+          <span class="main-form__info">Нажимая на кнопку, Вы соглашаетесь на обработку персональных данных</span>
+
+          <button type="submit" class="main-form__button btn-reset btn btn--yellow">Отправить</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
 
   </div>
 </body>

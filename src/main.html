@@ -58,9 +58,246 @@
 
       @include('partials/send-application-section.html')
 
+      <!-- Hotel catalog -->
+      <section class="container section section--margin-bottom">
+        <h2 class="h2 h2--text-link h2--text-link--mb"><a href="#">هتل های روسیه</a></h2>
+        <div class="tour-catalog-section section-margin section-margin--mb-big">
 
+          <div class="tour-catalog-section__slider direction-rtl">
+            <div class="slider-container slider-container--third">
+              <div class="swiper slider">
+                <div class="swiper-wrapper slider__wrapper">
+                  <div class="swiper-slide slider__slide">
+                    <a class="slider__element" href="img/card-hotel-slider.jpg" data-fslightbox="gallery">
+                      <picture class="bg-img bg-img--border">
+                        <source srcset="img/card-tour-block-mob.webp" type="image/webp" media="(max-width: 600px)" width="320" height="232">
+                        <source srcset="img/card-hotel-slider.webp" type="image/webp">
+                        <img loading="lazy"  src="img/card-hotel-slider.jpg" width="413" height="416" alt="tour-slider">
+                      </picture>
+                      <div class="card-tour__content card-tour__content--p20">
+                        <div class="card-tour__block">
+                          <span class="card-tour__description">کنسرت در مسکو   </span>
+                          <span class="card-tour__sum">30.000.000 تومان</span>
+
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="swiper-slide slider__slide">
+                    <a class="slider__element" href="img/card-hotel-slider.jpg" data-fslightbox="gallery">
+                      <picture class="bg-img bg-img--border">
+                        <source srcset="img/card-tour-block-mob.webp" type="image/webp" media="(max-width: 600px)" width="320" height="232">
+                        <source srcset="img/card-hotel-slider.webp" type="image/webp">
+                        <img loading="lazy"  src="img/card-hotel-slider.jpg" width="413" height="416" alt="tour-slider">
+                      </picture>
+                      <div class="card-tour__content card-tour__content--p20">
+                        <div class="card-tour__block">
+                          <span class="card-tour__description">اسکی در مسکو </span>
+                          <span class="card-tour__sum">30.000.000 تومان</span>
+
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="swiper-slide slider__slide">
+                    <a class="slider__element" href="img/card-hotel-slider.jpg" data-fslightbox="gallery">
+                      <picture class="bg-img bg-img--border">
+                        <source srcset="img/card-tour-block-mob.webp" type="image/webp" media="(max-width: 600px)" width="320" height="232">
+                        <source srcset="img/card-hotel-slider.webp" type="image/webp">
+                        <img loading="lazy"  src="img/card-hotel-slider.jpg" width="413" height="416" alt="tour-slider">
+                      </picture>
+                      <div class="card-tour__content card-tour__content--p20">
+                        <div class="card-tour__block">
+                          <span class="card-tour__description">فوتو سشن آرمیتاژ </span>
+                          <span class="card-tour__sum">30.000.000 تومان</span>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="swiper-slide slider__slide">
+                    <a class="slider__element" href="img/card-hotel-slider.jpg" data-fslightbox="gallery">
+                      <picture class="bg-img bg-img--border">
+                        <source srcset="img/card-tour-block-mob.webp" type="image/webp" media="(max-width: 600px)" width="320" height="232">
+                        <source srcset="img/card-hotel-slider.webp" type="image/webp">
+                        <img loading="lazy"  src="img/card-hotel-slider.jpg" width="413" height="416" alt="tour-slider">
+                      </picture>
+                      <div class="card-tour__content card-tour__content--p20">
+                        <div class="card-tour__block">
+                          <span class="card-tour__description">فوتو سشن آرمیتاژ </span>
+                          <span class="card-tour__sum">30.000.000 تومان</span>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="swiper-slide slider__slide">
+                    <a class="slider__element" href="img/card-hotel-slider.jpg" data-fslightbox="gallery">
+                      <picture class="bg-img bg-img--border">
+                        <source srcset="img/card-tour-block-mob.webp" type="image/webp" media="(max-width: 600px)" width="320" height="232">
+                        <source srcset="img/card-hotel-slider.webp" type="image/webp">
+                        <img loading="lazy"  src="img/card-hotel-slider.jpg" width="413" height="416" alt="tour-slider">
+                      </picture>
+                      <div class="card-tour__content card-tour__content--p20">
+                        <div class="card-tour__block">
+                          <span class="card-tour__description">فوتو سشن آرمیتاژ </span>
+                          <span class="card-tour__sum">30.000.000 تومان</span>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+
+              <div class="slider__navigation">
+                <div class="swiper-button-prev slider-arrow"><svg><use xlink:href="img/sprite.svg#arrow-left"></use></svg></div>
+                <div class="swiper-button-next slider-arrow"><svg><use xlink:href="img/sprite.svg#arrow-right"></use></svg></div>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+      </section>
+      <!-- End Hotel catalog -->
+
+      <section class="container section section--margin-bottom">
+        <h2 class="h2 h2--text-link h2--text-link--mb"><a href="#">مقالات ما</a></h2>
+        @include('partials/slider-article.html')
+      </section>
+
+      <!-- partners -->
+      <section class="container section section--margin-bottom">
+        <h2 class="h2 h2--text-link h2--text-link--mb"><a href="#">مناطق روسیه</a></h2>
+        <div class="tour-catalog-section section-margin section-margin--mb-big">
+
+          <div class="tour-catalog-section__slider direction-rtl">
+            <div class="slider-container slider-container--four">
+              <div class="swiper slider">
+                <div class="swiper-wrapper slider__wrapper">
+                  <div class="swiper-slide slider__slide">
+                    <a class="slider__element" href="img/region-slider.jpg" data-fslightbox="gallery">
+                      <picture class="bg-img bg-img--border">
+                        <source srcset="img/region-slider-mob.webp" type="image/webp" media="(max-width: 600px)" width="320" height="232">
+                        <source srcset="img/region-slider.webp" type="image/webp">
+                        <img loading="lazy"  src="img/region-slider.jpg" width="413" height="416" alt="tour-slider">
+                      </picture>
+                      <div class="card-tour__content card-tour__content--p20">
+                        <div class="card-tour__block">
+                          <span class="card-tour__description">سفر  به بایکال </span>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="swiper-slide slider__slide">
+                    <a class="slider__element" href="img/region-slider.jpg" data-fslightbox="gallery">
+                      <picture class="bg-img bg-img--border">
+                        <source srcset="img/region-slider-mob.webp" type="image/webp" media="(max-width: 600px)" width="320" height="232">
+                        <source srcset="img/region-slider.webp" type="image/webp">
+                        <img loading="lazy"  src="img/region-slider.jpg" width="413" height="416" alt="tour-slider">
+                      </picture>
+                      <div class="card-tour__content card-tour__content--p20">
+                        <div class="card-tour__block">
+                          <span class="card-tour__description">سفر  به کازان</span>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="swiper-slide slider__slide">
+                    <a class="slider__element" href="img/region-slider.jpg" data-fslightbox="gallery">
+                      <picture class="bg-img bg-img--border">
+                        <source srcset="img/region-slider-mob.webp" type="image/webp" media="(max-width: 600px)" width="320" height="232">
+                        <source srcset="img/region-slider.webp" type="image/webp">
+                        <img loading="lazy"  src="img/region-slider.jpg" width="413" height="416" alt="tour-slider">
+                      </picture>
+                      <div class="card-tour__content card-tour__content--p20">
+                        <div class="card-tour__block">
+                          <span class="card-tour__description">سفر به سنت پترزبورگ</span>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="swiper-slide slider__slide">
+                    <a class="slider__element" href="img/region-slider.jpg" data-fslightbox="gallery">
+                      <picture class="bg-img bg-img--border">
+                        <source srcset="img/region-slider-mob.webp" type="image/webp" media="(max-width: 600px)" width="320" height="232">
+                        <source srcset="img/region-slider.webp" type="image/webp">
+                        <img loading="lazy"  src="img/region-slider.jpg" width="413" height="416" alt="tour-slider">
+                      </picture>
+                      <div class="card-tour__content card-tour__content--p20">
+                        <div class="card-tour__block">
+                          <span class="card-tour__description">سفر به سنت پترزبورگ</span>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="swiper-slide slider__slide">
+                    <a class="slider__element" href="img/region-slider.jpg" data-fslightbox="gallery">
+                      <picture class="bg-img bg-img--border">
+                        <source srcset="img/region-slider-mob.webp" type="image/webp" media="(max-width: 600px)" width="320" height="232">
+                        <source srcset="img/region-slider.webp" type="image/webp">
+                        <img loading="lazy"  src="img/region-slider.jpg" width="413" height="416" alt="tour-slider">
+                      </picture>
+                      <div class="card-tour__content card-tour__content--p20">
+                        <div class="card-tour__block">
+                          <span class="card-tour__description">سفر به سنت پترزبورگ</span>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-pagination swiper-pagination--four"></div>
+
+              <div class="slider__navigation">
+                <div class="swiper-button-prev slider-arrow"><svg><use xlink:href="img/sprite.svg#arrow-left"></use></svg></div>
+                <div class="swiper-button-next slider-arrow"><svg><use xlink:href="img/sprite.svg#arrow-right"></use></svg></div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <section class="container section--margin-bottom">
+        <div class="objects-wrap">
+          <div class="objects-wrap-items">
+              <div class="objects-wrap-items-show scroll-reverse">
+                <a class="partners-wrap__element" href="#">
+                  <img loading="lazy" src="img/partners-first.svg" width="305" height="110" class="image" alt="img">
+                </a>
+                <a class="partners-wrap__element" href="#">
+                  <img loading="lazy" src="img/partners-second.svg" width="305" height="110" class="image" alt="img">
+                </a>
+                <a class="partners-wrap__element" href="#">
+                  <img loading="lazy" src="img/partners-thierd.svg" width="305" height="110" class="image" alt="img">
+                </a>
+                <a class="partners-wrap__element" href="#">
+                  <img loading="lazy" src="img/partners-fourh.svg" width="305" height="110" class="image" alt="img">
+                </a>
+              </div>
+              <div aria-hidden="true" class="objects-wrap-items-show scroll-reverse">
+                <a class="partners-wrap__element" href="#">
+                  <img loading="lazy" src="img/partners-first.svg" width="305" height="110" class="image" alt="img">
+                </a>
+                <a class="partners-wrap__element" href="#">
+                  <img loading="lazy" src="img/partners-second.svg" width="305" height="110" class="image" alt="img">
+                </a>
+                <a class="partners-wrap__element" href="#">
+                  <img loading="lazy" src="img/partners-thierd.svg" width="305" height="110" class="image" alt="img">
+                </a>
+                <a class="partners-wrap__element" href="#">
+                  <img loading="lazy" src="img/partners-fourh.svg" width="305" height="110" class="image" alt="img">
+                </a>
+              </div>
+          </div>
+      </div>
+
+
+      </section>
+      <!-- End partners -->
     </main>
-    <!--@include('partials/footer.html')-->
+    @include('partials/footer.html')
   </div>
 </body>
 

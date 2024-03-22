@@ -88,6 +88,7 @@ p,
   border: none;
   background-color: transparent;
   cursor: pointer;
+  transition: 0.3s;
 
   display: flex;
   align-items: center;
@@ -138,8 +139,17 @@ p,
     border: 1px solid var(--iran-discovery-blue);
   }
 
+  &--w100{
+    width: 100%;
+  }
+
   &--orange {
     background: var(--iran-discovery-orange);
+    @media screen and (min-width: 1024px) {
+      &:hover{
+        background: var(--blue-interactive);
+      }
+    }
   }
 
   &--orange-push {
@@ -163,6 +173,23 @@ p,
 
     &--border{
       border-bottom: 1px dashed #333;
+    }
+
+    &--col-big{
+      font-weight: 500;
+      font-size: 26px;
+      line-height: 1.6;
+      letter-spacing: 0.02em;
+      color: #333;
+    }
+
+    &--col-mini{
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 1.6;
+      letter-spacing: -0.03em;
+      text-align: right;
+      color: var(--blue-interactive);
     }
 
     @media screen and (max-width: 1100px) {
@@ -270,8 +297,8 @@ p,
   direction: rtl;
 }
 
-.section-margin{
-  &--mb-big{
+.section{
+  &--margin-bottom{
     margin-bottom: 80px;
 
     @include max768 {

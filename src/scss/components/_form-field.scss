@@ -1,6 +1,6 @@
-
 .form-field {
-
+  display: inline-block;
+  width: 100%;
   &__name {
     font-weight: 400;
     font-size: 14px;
@@ -16,7 +16,11 @@
     color: var(--black-text);
   }
 
-  &__star{
+  &--mb {
+    margin-bottom: 24px;
+  }
+
+  &__star {
     color: var(--iran-discovery-orange);
   }
 
@@ -45,5 +49,56 @@
 
   &__btn {
     padding: 14px 30px;
+  }
+}
+
+.custom-checkbox {
+  display: flex;
+  transition: 0.3s;
+  cursor: pointer;
+
+  &__check {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    width: 24px;
+    height: 24px;
+    background: var(--blue-interactive);
+    flex-shrink: 0;
+    margin-left: 12px;
+    transition: 0.3s;
+  }
+
+  &__icons {
+    width: 16px;
+    height: 12px;
+    fill: var(--white);
+    transition: 0.3s;
+    opacity: 0;
+  }
+
+  &__text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.2;
+    text-align: right;
+    color: var(--black-text);
+  }
+
+  @media screen and (min-width: 1024px) {
+    &:hover{
+      .custom-checkbox__check {
+        background: var(--blue-interactive);
+      }
+    }
+  }
+
+
+  input:checked + span {
+    background: var(--iran-discovery-orange);
+    .custom-checkbox__icons{
+      opacity: 1;
+    }
   }
 }

@@ -1,0 +1,105 @@
+.partners-wrap{
+  max-width:100%;
+  margin: auto;
+  padding: 20px;
+
+  &__element{
+    @include max600 {
+      width: 160px;
+      height: 63px;
+    }
+  }
+}
+
+.objects-wrap{
+  max-width:100%;
+  margin: auto;
+}
+.objects-wrap-items {
+  position: relative;
+  display: flex;
+  overflow: hidden;
+  user-select: none;
+  gap: 20px;
+  @include max600 {
+    gap: 10px;
+  }
+}
+.objects-wrap-items:before,
+.objects-wrap-items:after {
+  content: "";
+  height: 100%;
+  top: 0;
+  width: 10%;
+  position: absolute;
+  z-index: 1;
+  pointer-events: none;
+}
+.objects-wrap-items:before {
+  left: 0;
+  background: linear-gradient(
+    90deg,
+    var(--dark) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+}
+.objects-wrap-items:after {
+  right: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(168, 27, 27, 0) 0%,
+    var(--dark) 100%
+  );
+}
+.objects-wrap-items-show {
+  flex-shrink: 0;
+  display: flex;
+  gap: 20px;
+  counter-reset: item;
+  justify-content: space-around;
+  min-width: 100%;
+  @include max600 {
+    gap: 10px;
+  }
+}
+.objects-wrap .item {
+  background: var(--grey);
+  flex: 0 0 auto;
+  padding: 1.5rem;
+  color: white;
+  font-size: 1.5rem;
+  border-radius: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+  transition: all 0.1s ease-in-out;
+}
+
+.objects-wrap .scroll {
+  animation: scroll 30s linear infinite;
+}
+
+.objects-wrap-items:hover .scroll-reverse {
+  animation-play-state: paused;
+}
+.objects-wrap .scroll-reverse {
+  animation: scroll-reverse 30s linear infinite;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(-100% - 20px));
+  }
+}
+@keyframes scroll-reverse {
+  from {
+      transform: translateX(calc(-100% - 20px));
+  }
+  to {
+    transform: translateX(0);
+  }
+}
