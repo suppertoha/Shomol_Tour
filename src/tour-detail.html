@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+@include('partials/head.html')
+
+<body class="page__body">
+  <div class="site-container">
+    @include('partials/header.html')
+    <main class="main">
+    <!-- hero -->
+    <section class="hero">
+      <div class="hero__wrapper">
+        <div class="hero__images bg-img slider-fade">
+          <!--<img loading="lazy" src="img/test-banner.jpg" class="slider-fade__img"  width="1442" height="472"  alt="banner-img">-->
+          <img loading="lazy" src="img/hero-img.jpg" class="slider-fade__img"  width="1442" height="472"  alt="banner-img">
+        </div>
+
+        <div class="hero__wrapper hero__wrapper--padding hero__wrapper--flex-end direction-rtl">
+          <ul class="breadcrumbs breadcrumbs--position direction-rtl list-reset">
+            <li class="breadcrumbs__item">صفحه اصلی</li>
+            <li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link">تورهای منطقه کالینینگراد</a></li>
+            <li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link">سال نو در قلب کونیگزبرگ</a></li>
+          </ul>
+          <div class="hero__content">
+            <h1>
+              تور مسکو <br> سفر خاطر انگیز به پایتخت روسیه
+            </h1>
+          </div>
+        </div>
+      </div>
+
+    </section>
+    <!-- End hero -->
+
+    <section class="section-wrapper container">
+      <sidebar class="sidebar sidebar--position">
+        <div class="calendar">
+          <div class="calendar__header">
+            <div class="calendar__block direction-rtl">
+              <h3 class="calendar__descr">39.000.000 تومان </h3>
+              <span class="calendar__info">شامل کرایه بلیط هوا پیما</span>
+              <ul class="list-reset duration-travel">
+                <li class="duration-travel__item">
+                  <strong>مدت زمان</strong>
+                </li>
+                <li class="duration-travel__item">
+                  <img loading="lazy" src="img/sun.svg" class="image" alt="img">
+                  <span class="duration-travel__name">6 شب</span>
+                </li>
+                <li class="duration-travel__item">
+                  <img loading="lazy" src="img/moon.svg" class="image" alt="img">
+                  <span class="duration-travel__name">6 شب</span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="datepicker-calendar datepicker-calendar--icon direction-rtl">
+              <input type="text" placeholder=" 5 اسفند 1403" id="airdatepicker" class="datepicker-calendar__form">
+            </div>
+            <button class="form-field__btn btn btn--w100 btn--orange" type="submit">رزرو تور </button>
+          </div>
+
+          <div class="calendar__bottom direction-rtl">
+            <ul class="list-reset calendar__tour tour-calendar">
+              <li class="tour-calendar__item">
+                <span class="tour-calendar__name">کلاس اقامت تور</span>
+                <div class="text-icon">
+                  <img loading="lazy" src="img/on.svg" class="image" alt="img">
+                  <p><strong>4-5</strong></p>
+                </div>
+              </li>
+              <li class="tour-calendar__item">
+                <div class="text-icon">
+                  <img loading="lazy" src="img/air-left.svg" class="image" alt="img">
+                  <p>پرواز رفت: 03:00</p>
+                </div>
+                <div class="text-icon">
+                  <img loading="lazy" src="img/people.svg" class="image" alt="img">
+                  <p>دیدار گروهی در هتل رکسان : 22:00</p>
+                </div>
+                <div class="text-icon">
+                  <img loading="lazy" src="img/basket.svg" class="image" alt="img">
+                  <p>کافی شاپ هتل رکسان <br> همراه با پذیرایی چای و قهوه</p>
+                </div>
+                <div class="text-icon">
+                  <img loading="lazy" src="img/air-right.svg" class="image" alt="img">
+                  <p>پرواز برگشت: 03:00</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+
+        <a href="#" class="sidebar-banner">
+          <div class="sidebar-banner__content">
+            <span class="sidebar-banner__name">با ثبت نام نفری </span>
+            <span class="sidebar-banner__sum">5٪</span>
+            <span class="sidebar-banner__descr">تخفیف بگیرید</span>
+          </div>
+          <img src="img/sidebar-banner__img.png" width="196" height="144" class="sidebar-banner__img" alt="banner-img">
+        </a>
+
+        <div class="sidebar-contacts">
+          <ul class="list-reset sidebar-contacts__top direction-rtl">
+            <li class="sidebar-contacts-block">
+              <a href="#" class="sidebar-contacts-block__link">
+                <img loading="lazy" src="img/advantages-1.svg" class="sidebar-contacts-block__image" width="80" height="80" alt="advantages">
+
+                <div class="sidebar-contacts-block__descr">
+                  تور گاید <br> روسیه
+                </div>
+
+              </a>
+            </li>
+
+            <li class="sidebar-contacts-block">
+              <a href="#" class="sidebar-contacts-block__link">
+                <img loading="lazy" src="img/advantages-2.svg" class="sidebar-contacts-block__image" width="80" height="80" alt="advantages">
+
+                <div class="sidebar-contacts-block__descr">
+                  بیمه
+                <br> روسیه
+                </div>
+
+              </a>
+            </li>
+
+            <li class="sidebar-contacts-block">
+              <a href="#" class="sidebar-contacts-block__link">
+                <img loading="lazy" src="img/advantages-3.svg" class="sidebar-contacts-block__image" width="80" height="80" alt="advantages">
+
+                <div class="sidebar-contacts-block__descr">
+                  حمل و نقل در
+                <br> روسیه
+                </div>
+
+              </a>
+            </li>
+
+            <li class="sidebar-contacts-block">
+              <a href="#" class="sidebar-contacts-block__link">
+                <img loading="lazy" src="img/advantages-4.svg" class="sidebar-contacts-block__image" width="80" height="80" alt="advantages">
+
+                <div class="sidebar-contacts-block__descr">
+                  هتل های
+                <br> روسیه
+                </div>
+
+              </a>
+            </li>
+
+            <li class="sidebar-contacts-block">
+              <a href="#" class="sidebar-contacts-block__link">
+                <img loading="lazy" src="img/advantages-5.svg" class="sidebar-contacts-block__image" width="80" height="80" alt="advantages">
+
+                <div class="sidebar-contacts-block__descr">
+                  تورهای
+                <br> روسیه
+                </div>
+
+              </a>
+            </li>
+
+            <li class="sidebar-contacts-block">
+              <a href="#" class="sidebar-contacts-block__link">
+                <img loading="lazy" src="img/advantages-6.svg" class="sidebar-contacts-block__image" width="80" height="80" alt="advantages">
+
+                <div class="sidebar-contacts-block__descr">
+                  ویزای <br>
+        روسیه
+                </div>
+
+              </a>
+            </li>
+          </ul>
+          <div class="sidebar-contacts__bottom">
+            <div class="contacts-container">
+              <a href="tel:+98211373" class="link-img">
+                <img loading="lazy" src="img/phone-big.svg" width="34" height="34" class="link-img__icon link-img__icon" alt="img">
+                <span class="link-img__text link-img__text--border link-img__text--col-big">+98 211373</span>
+              </a>
+              <a href="tel:+981343425970" class="link-img">
+                <img loading="lazy" src="img/phone.svg" width="24" height="24" class="link-img__icon" alt="img">
+                <span class="link-img__text link-img__text--border">+98 1343425970</span>
+              </a>
+              <a href="https://telegram.org/" class="link-img">
+                <img loading="lazy" src="img/telegram.svg" width="24" height="24" class="link-img__icon" alt="img">
+                <span class="link-img__text link-img__text--border">+98 1343425970</span>
+              </a>
+
+              <a href="mailto:footer-top__mail" class="link-img">
+                <img loading="lazy" src="img/mail.svg" width="24" height="24" class="link-img__icon" alt="img">
+                <span class="link-img__text link-img__text--light-blue link-img__text--col-mini">info@shomoltour.com</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </sidebar>
+      <div class="main-content">
+      </div>
+    </section>
+    </main>
+    @include('partials/footer.html')
+  </div>
+</body>
+
+</html>

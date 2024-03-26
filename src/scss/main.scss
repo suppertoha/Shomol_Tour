@@ -4,7 +4,10 @@
 @import "fonts";
 @import "settings";
 
+
+
 // основные компоненты
+@import "./components/air-datepicker";
 @import "./components/start-page";
 @import "./components/general";
 @import "./components/header";
@@ -20,5 +23,7 @@
 @import "./components/rating";
 @import "./components/form-field";
 @import "./components/partners";
+@import "./components/breadcrumbs";
+@import "./components/datepicker";
 
 

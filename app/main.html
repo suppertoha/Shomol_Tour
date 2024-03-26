@@ -122,17 +122,19 @@
     </div>
 
     <div class="hero__wrapper hero__wrapper--flex-center">
-      <h1 class="hero__title h1 h1--text-center">خدمات <br>
-        برای تجارت و گردشگری
-        <br>در روسیه
-      </h1>
+      <div class="hero__content hero__content--center">
+        <h1>خدمات <br>
+          برای تجارت و گردشگری
+          <br>در روسیه
+        </h1>
+      </div>
     </div>
   </div>
 
 </section>
 <!-- End hero -->
 
-      <section class="advantages container">
+      <section class="advantages advantages--mb container">
   <ul class="advantages__inner list-reset">
     <li class="advantages__item advantages-block">
       <a href="#" class="advantages-block__link">
@@ -340,7 +342,7 @@
       <!-- End Tour catalog -->
 
       <!-- Hotel catalog -->
-      <section class="container section section--margin-bottom">
+      <section class="container section section--margin-bottom-10">
         <h2 class="h2 h2--text-link h2--text-link--mb"><a href="#">هتل های روسیه</a></h2>
         <div class="tour-catalog-section section-margin section-margin--mb-big">
 
@@ -543,8 +545,8 @@
       <!-- End Hotel catalog -->
 
       <!-- advantages-link -->
-      <section class="advantages container section section--margin-bottom">
-        <h2 class="h2 h2--text-link h2--text-link--mb"><a href="#">سفر در روسیه</a></h2>
+      <section class="advantages container section section--margin-bottom-30">
+        <h2 class="h2 h2--text-link h2--text-link--mb-30 "><a href="#">سفر در روسیه</a></h2>
         <ul class="advantages__inner advantages__inner--big list-reset">
           <li class="advantages__item advantages-block">
             <a href="#" class="advantages-block__link">
@@ -581,12 +583,12 @@
       <li class="send-apllication__item">
         <form class="send-apllication__form">
           <label class="form-field form-field--mb">
-            <span class="form-field__caption">اسم شما <span class="form-field__star">*</span></span>
+            <span class="form-field__caption">نام و نام خانوادگی <span class="form-field__star">*</span></span>
             <input type="text" name="name" placeholder="یوسف اجیروف" class="form-field__input">
           </label>
 
           <label class="form-field form-field--mb">
-            <span class="form-field__caption">اسم شما <span class="form-field__star">*</span></span>
+            <span class="form-field__caption">شماره تماس<span class="form-field__star">*</span></span>
             <input class="inputPhone form-field__input"  type="tel" placeholder="+98" inputmode="tel" name="ST_REGISTER_AUTH_PHONE" autocomplete="off" required="">
           </label>
 
@@ -594,15 +596,18 @@
             <span class="form-field__caption">درخواست<span class="form-field__star">*</span></span>
             <textarea name="message" placeholder="ترجیحات و خواسته های شما" class="form-field__input form-field__input--big"></textarea>
           </label>
-          <label class="custom-checkbox contacts-form__checkbox form-field--mb">
+          <label class="custom-checkbox form-field__checkbox form-field--mb">
             <input type="checkbox" checked class="custom-checkbox__input">
             <span class="custom-checkbox__check"><svg class="custom-checkbox__icons">
               <use xlink:href="img/sprite.svg#arrow-check"></use>
             </svg></span>
-            <span class="custom-checkbox__text">من با پردازش داده های شخصی مطابق با شرایط سیاست حفظ حریم خصوصی موافقم</span>
+            <span class="custom-checkbox__text">
+              <a href="#">سیاست حفظ حریم</a>
+              من با پردازش داده های شخصی مطابق با شرایط سیاست حفظ حریم خصوصی موافقم
+            </span>
           </label>
           <div class="centered">
-            <button class="contacts-form__btn btn btn--w100 btn--orange" type="submit">ارسال درخواست</button>
+            <button class="form-field__btn btn btn--w100 btn--orange" type="submit">ارسال درخواست</button>
           </div>
         </form>
         <picture class="send-apllication__image send-apllication__image--mobile">

@@ -2,6 +2,8 @@ import './components/burger';
 import './components/slider';
 import './components/select';
 import './components/inputMask';
+import './components/datepicker';
+
 //import './components/accordion';
 //import './components/blockHeightOfTitle';
 //import './components/goBack';

@@ -5,12 +5,12 @@
       <li class="send-apllication__item">
         <form class="send-apllication__form">
           <label class="form-field form-field--mb">
-            <span class="form-field__caption">اسم شما <span class="form-field__star">*</span></span>
+            <span class="form-field__caption">نام و نام خانوادگی <span class="form-field__star">*</span></span>
             <input type="text" name="name" placeholder="یوسف اجیروف" class="form-field__input">
           </label>
 
           <label class="form-field form-field--mb">
-            <span class="form-field__caption">اسم شما <span class="form-field__star">*</span></span>
+            <span class="form-field__caption">شماره تماس<span class="form-field__star">*</span></span>
             <input class="inputPhone form-field__input"  type="tel" placeholder="+98" inputmode="tel" name="ST_REGISTER_AUTH_PHONE" autocomplete="off" required="">
           </label>
 
@@ -18,15 +18,18 @@
             <span class="form-field__caption">درخواست<span class="form-field__star">*</span></span>
             <textarea name="message" placeholder="ترجیحات و خواسته های شما" class="form-field__input form-field__input--big"></textarea>
           </label>
-          <label class="custom-checkbox contacts-form__checkbox form-field--mb">
+          <label class="custom-checkbox form-field__checkbox form-field--mb">
             <input type="checkbox" checked class="custom-checkbox__input">
             <span class="custom-checkbox__check"><svg class="custom-checkbox__icons">
               <use xlink:href="img/sprite.svg#arrow-check"></use>
             </svg></span>
-            <span class="custom-checkbox__text">من با پردازش داده های شخصی مطابق با شرایط سیاست حفظ حریم خصوصی موافقم</span>
+            <span class="custom-checkbox__text">
+              <a href="#">سیاست حفظ حریم</a>
+              من با پردازش داده های شخصی مطابق با شرایط سیاست حفظ حریم خصوصی موافقم
+            </span>
           </label>
           <div class="centered">
-            <button class="contacts-form__btn btn btn--w100 btn--orange" type="submit">ارسال درخواست</button>
+            <button class="form-field__btn btn btn--w100 btn--orange" type="submit">ارسال درخواست</button>
           </div>
         </form>
         <picture class="send-apllication__image send-apllication__image--mobile">
